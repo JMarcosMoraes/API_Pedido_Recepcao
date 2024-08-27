@@ -1,5 +1,6 @@
 package com.kata.pedidos.domain;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,5 +17,6 @@ public class Pedido {
 	private Integer id;
 	
 	private List<ItemPedido> listaPedido = new ArrayList<>();
+	private BigDecimal valorPedido;
 	
 }
