@@ -1,14 +1,19 @@
 package com.kata.pedidos.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
 
 @Entity
-public abstract class Pessoa {
+public abstract class Pessoa implements Serializable {
+	
+	private static final long serialVersionUID = 6716566438896914859L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY )
