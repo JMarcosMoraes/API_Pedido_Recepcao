@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "6fd63e61-a459-4759-80d0-f2c92ae54369",
+		"name": "Pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "870202"
+	},
+	"item": [
+		{
+			"name": "Buscar Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/pedidos/"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Pedido",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/pedidos/data/2024-08-29"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Pedido por data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8081/pedidos/data/2024-08-29"
+			},
+			"response": []
+		},
+		{
+			"name": "Realizar Pedidos Json mais que 10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"numeroControle\": 1,\r\n        \"nome\": \"X-BACON\",\r\n        \"valor\": 20.0,\r\n        \"quantidade\": 1,\r\n        \"cliente\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 2,\r\n        \"nome\": \"X-SALADA\",\r\n        \"valor\": 20.0,\r\n        \"quantidade\": 5,\r\n        \"cliente\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 3,\r\n        \"nome\": \"PIZZA CALABRESA\",\r\n        \"valor\": 10.0,\r\n        \"quantidade\": 10,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 4,\r\n        \"nome\": \"CAIXA SKOL\",\r\n        \"valor\": 38.0,\r\n        \"quantidade\": 10,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 5,\r\n        \"nome\": \"Pedido 5\",\r\n        \"valor\": 300.0,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 6,\r\n        \"nome\": \"Pedido 6\",\r\n        \"valor\": 350.0,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 7,\r\n        \"nome\": \"Pedido 7\",\r\n        \"valor\": 400.0\r\n    },\r\n    {\r\n        \"numeroControle\": 8,\r\n        \"nome\": \"Pedido 8\",\r\n        \"valor\": 450.0\r\n    },\r\n    {\r\n        \"numeroControle\": 9,\r\n        \"nome\": \"Pedido 9\",\r\n        \"valor\": 500.0\r\n    },\r\n    {\r\n        \"numeroControle\": 10,\r\n        \"nome\": \"Pedido 10\",\r\n        \"valor\": 550.0\r\n    },\r\n    {\r\n        \"numeroControle\": 11,\r\n        \"nome\": \"Pedido 11\",\r\n        \"valor\": 550.0\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/pedidos/json"
+			},
+			"response": []
+		},
+		{
+			"name": "Pedidos json Sucesso",
+			"protocolProfileBehavior": {
+				"strictSSL": true,
+				"followOriginalHttpMethod": false,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"numeroControle\": 1,\r\n        \"nome\": \"X-BACON\",\r\n        \"valor\": 20.0,\r\n        \"quantidade\": 1,\r\n        \"cliente\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 2,\r\n        \"nome\": \"X-SALADA\",\r\n        \"valor\": 20.0,\r\n        \"quantidade\": 5,\r\n        \"cliente\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 3,\r\n        \"nome\": \"PIZZA CALABRESA\",\r\n        \"valor\": 10.0,\r\n        \"quantidade\": 10,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 4,\r\n        \"nome\": \"CAIXA SKOL\",\r\n        \"valor\": 38.0,\r\n        \"quantidade\": 10,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 5,\r\n        \"nome\": \"Pedido 5\",\r\n        \"valor\": 300.0,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 6,\r\n        \"nome\": \"Pedido 6\",\r\n        \"valor\": 350.0,\r\n        \"cliente\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"numeroControle\": 7,\r\n        \"nome\": \"Pedido 7\",\r\n        \"valor\": 400.0\r\n    },\r\n    {\r\n        \"numeroControle\": 8,\r\n        \"nome\": \"Pedido 8\",\r\n        \"valor\": 450.0\r\n    },\r\n    {\r\n        \"numeroControle\": 9,\r\n        \"nome\": \"Pedido 9\",\r\n        \"valor\": 500.0\r\n    },\r\n    {\r\n        \"numeroControle\": 10,\r\n        \"nome\": \"Pedido 10\",\r\n        \"valor\": 550.0\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8081/pedidos/json"
+			},
+			"response": []
+		},
+		{
+			"name": "Pedidos XML, com sucesso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<pedidos>\r\n    <pedido>\r\n        <numeroControle>1</numeroControle>\r\n        <nome>Pedido 1</nome>\r\n        <valor>100.0</valor>\r\n        <cliente>\r\n            <id>1</id>\r\n        </cliente>\r\n    </pedido>\r\n    <pedido>\r\n        <numeroControle>2</numeroControle>\r\n        <nome>Pedido 2</nome>\r\n        <valor>150.0</valor>\r\n        <cliente>\r\n            <id>1</id>\r\n        </cliente>\r\n    </pedido>\r\n</pedidos>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": "localhost:8081/pedidos/xml"
+			},
+			"response": []
+		}
+	]
+}
