@@ -35,22 +35,6 @@ class PedidoServiceTest {
 	@Mock
 	private PedidoRepository pedidoRepository;
 	
-	@BeforeAll
-	private void init() {
-		Cliente cliente_01 = new Cliente(1, "José Marcos", "CPF", "email01@mail.com");
-		Cliente cliente_02 = new Cliente(2, "Luciano", "CPF", "email01@mail.com");
-		Cliente cliente_03 = new Cliente(3, "Matteo", "CPF", "email01@mail.com");
-		Cliente cliente_04 = new Cliente(4, "Marcelo", "CPF", "email01@mail.com");
-		Cliente cliente_05 = new Cliente(5, "Fernanda", "CPF", "email01@mail.com");
-		Cliente cliente_06 = new Cliente(6, "Manuela", "CPF", "email01@mail.com");
-		Cliente cliente_07 = new Cliente(7, "Neuza Maria", "CPF", "email01@mail.com");
-		Cliente cliente_08 = new Cliente(8, "Adriana", "CPF", "email01@mail.com");
-		Cliente cliente_09 = new Cliente(9, "Valeria", "CPF", "email01@mail.com");
-		Cliente cliente_10 = new Cliente(10,"Andrea", "CPF", "email01@mail.com");
-		
-		clienteService.saveAll(Arrays.asList(cliente_01,cliente_02,cliente_03,cliente_04,cliente_05,cliente_06,cliente_07,cliente_08,cliente_09,cliente_10));
-	}
-
 	@Test
 	public void testRealizarPedidoSucesso() throws Exception {
 		Cliente cliente_01 = new Cliente(1, "José Marcos", "CPF", "email01@mail.com");
